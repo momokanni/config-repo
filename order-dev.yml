@@ -1,8 +1,6 @@
 spring:
   application:
     name: order
-  jpa:
-    show-sql: true
   datasource: 
     driver-class-name: com.mysql.jdbc.Driver
     username: root
@@ -12,9 +10,5 @@ eureka:
   client:
     service-url:
       defaultZone: http://47.94.128.132:8761/eureka/
-# 配置获取Product Server规则
-Product:
-  ribbon:
-    NFLoadBalancerR uleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
 env: 
   dev
