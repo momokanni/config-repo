@@ -16,4 +16,5 @@ eureka:
 Product:
   ribbon:
     NFLoadBalancerR uleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
-env: dev
+env: 
+  dev
