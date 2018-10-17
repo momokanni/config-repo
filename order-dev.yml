@@ -4,10 +4,10 @@ spring:
   jpa:
     show-sql: true
   datasource: 
-    url: jdbc:mysql://m.limit-tech.com:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
     driver-class-name: com.mysql.jdbc.Driver
     username: root
     password: txhl1107mysql
+    url: jdbc:mysql://m.limit-tech.com:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
 eureka:
   client:
     service-url:
