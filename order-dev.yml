@@ -4,7 +4,7 @@ spring:
   datasource: 
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: txhl1107mysql
+    password: txhl1107mysql 
     url: jdbc:mysql://m.limit-tech.com:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
 eureka:
   client:
