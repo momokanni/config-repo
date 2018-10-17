@@ -6,4 +6,4 @@ spring:
     url: jdbc:mysql://m.limit-tech.com:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: txhl1107mysql
-env: prod
+env: dev
