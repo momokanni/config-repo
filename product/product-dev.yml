@@ -8,7 +8,3 @@ spring:
      url: jdbc:mysql://m.limit-tech.com:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
   jpa:
      show-sql: true
-eureka:
-  client:
-     service-url:
-        defaultZone: http://47.94.128.132:8761/eureka/
