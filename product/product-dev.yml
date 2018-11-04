@@ -6,5 +6,10 @@ spring:
      username: root
      password: txhl1107mysql
      url: jdbc:mysql://m.limit-tech.com:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
+  rabbitmq:
+    host: 47.94.128.132
+    port: 5672
+    username: guest
+    password: guest
   jpa:
      show-sql: true
