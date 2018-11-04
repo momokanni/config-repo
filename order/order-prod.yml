@@ -20,4 +20,4 @@ Product:
 env: prod
 file: 
   codeFormat: "UTF-8"
-  localPath: "/usr/local/file/"
+  localPath: "/usr/local/RecFile/"
