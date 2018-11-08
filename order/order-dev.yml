@@ -11,9 +11,9 @@ spring:
     port: 5672
     username: guest
     password: guest
-redis:
-  host: 47.94.128.132
-  port: 6379
+  redis:
+    host: 47.94.128.132
+    port: 6379
 env: dev
 file: 
   codeFormat: "UTF-8"
