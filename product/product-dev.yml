@@ -11,5 +11,8 @@ spring:
     port: 5672
     username: admin
     password: admin
+  redis:
+    host: 47.94.128.132
+    port: 6379
   jpa:
      show-sql: true
