@@ -1,0 +1,12 @@
+zuul:
+  routes:
+    # /productSer/product/list == /product(Eureka service name)/product/list
+    productService:
+      path: /productSer/**
+      serviceId: PRODUCT
+      # cookie and Dynamic routing
+      sensitiveHeaders:
+    # sample write
+    #product: /productSer/**
+  ignored-patterns:
+    - /product/product/list
