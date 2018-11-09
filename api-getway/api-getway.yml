@@ -10,3 +10,4 @@ zuul:
     #product: /productSer/**
   ignored-patterns:
     - /product/product/list
+env: dev
