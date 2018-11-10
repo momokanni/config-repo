@@ -5,9 +5,9 @@ spring:
     show-sql: true
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://m.limit-tech.com:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
-    username: root
-    password: txhl1107mysql
+    username: wxOrder
+    password: 123456
+    url: jdbc:mysql://47.94.128.132:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
   rabbitmq:
     host: 47.94.128.132
     port: 5672
