@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: user
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://m.limit-tech.com:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
