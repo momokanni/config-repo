@@ -11,4 +11,8 @@ zuul:
     #product: /productSer/**
   ignored-patterns:
     - /product/product/list
+spring:
+  redis:
+    host: 47.94.128.132
+    port: 6379
 env: dev
