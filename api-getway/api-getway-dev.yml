@@ -1,4 +1,5 @@
 zuul:
+  sensitive-headers: 
   routes:
     # /productSer/product/list == /product(Eureka service name)/product/list
     productService:
