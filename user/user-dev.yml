@@ -1,9 +1,9 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://m.limit-tech.com:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
-    username: root
-    password: txhl1107mysql
+    url: jdbc:mysql://47.94.128.132:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
+    username: wxOrder
+    password: 123456
   redis:
     host: 47.94.128.132
     port: 6379
