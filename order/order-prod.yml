@@ -35,6 +35,9 @@ hystrix:
       sleepWindowInMilliseconds: 10000
       requestVolumeThreshold: 10
       errorThresholdPercentage: 60
+feign:
+  hystrix:
+    enabled: true
 # 配置获取Product Server规则
 Product:
   ribbon:
