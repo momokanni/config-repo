@@ -16,6 +16,25 @@ spring:
   redis:
     host: 47.94.128.132
     port: 6379
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+
+    getHystrixProductList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+
+    circuitBreaker:
+      enabled: true
+      sleepWindowInMilliseconds: 10000
+      requestVolumeThreshold: 10
+      errorThresholdPercentage: 60
 # 配置获取Product Server规则
 Product:
   ribbon:
