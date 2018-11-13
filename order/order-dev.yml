@@ -50,3 +50,5 @@ env: dev
 file: 
   codeFormat: "UTF-8"
   localPath: "/usr/local/RecFile/"
+server:
+  port: 8081
