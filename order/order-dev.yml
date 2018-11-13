@@ -7,12 +7,12 @@ spring:
     password: 123456
     url: jdbc:mysql://mysql:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
   rabbitmq:
-    host: 47.94.128.132
+    host: rabbit_service
     port: 5672
     username: guest
     password: guest
   redis:
-    host: 47.94.128.132
+    host: redis
     port: 6379
   zipkin:
     base-url: http://zipkin:9411
