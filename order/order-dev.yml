@@ -14,6 +14,13 @@ spring:
   redis:
     host: 47.94.128.132
     port: 6379
+  zipkin:
+    base-url: http://47.94.128.132:9411
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
 hystrix:
   command:
     default:
@@ -36,6 +43,9 @@ hystrix:
 feign:
   hystrix:
     enabled: true
+logging:
+  level:
+    org.springframework.cloud.openfeign: debug
 env: dev
 file: 
   codeFormat: "UTF-8"
