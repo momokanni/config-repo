@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: order
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: wxOrder
+    password: 123456
+    url: jdbc:mysql://47.94.128.132:3306/wxOrder?useUnicode=true&characterEncoding=UTF-8
+  rabbitmq:
+    host: 47.94.128.132
+    port: 5672
+    username: admin
+    password: admin
+  redis:
+    host: 47.94.128.132
+    port: 6379
+  zipkin:
+    base-url: http://zipkin:9411
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+
+    getHystrixProductList:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+
+    circuitBreaker:
+      enabled: true
+      sleepWindowInMilliseconds: 10000
+      requestVolumeThreshold: 10
+      errorThresholdPercentage: 60
+feign:
+  hystrix:
+    enabled: true
+logging:
+  level:
+    org.springframework.cloud.openfeign: debug
+env: dev
+file: 
+  codeFormat: "UTF-8"
+  localPath: "/usr/local/RecFile/"
+server:
+  port: 8081
